@@ -1,0 +1,46 @@
+.sidebar{
+    background-color:#040440
+}
+.wrapper{
+    width:250px;
+    position:relative;
+}
+.sidebar-menu{
+    color : rgb(206, 200, 200);
+}
+.footer{
+    width:210px;
+    background-color: #2d2d69;
+    position: absolute;
+    bottom : -190px;
+    left: 10px;
+}
+.icon{
+    width:20%;
+}
+.pic{
+    width:100%;
+}
+
+.info{
+    width:60%;
+    font-size:10px
+}
+.right-content{
+    background-color:#f5f6f8
+}
+.header-wrapper{
+    position:relative;
+}
+.hand{
+    width:20px;
+}
+.search-wrapper{
+    width:100%;
+    position:relative;
+}
+.search-icon{
+    position: absolute;
+    top:10px;
+    left:20px;
+}
