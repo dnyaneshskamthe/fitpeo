@@ -5,7 +5,7 @@ const Sidebar = () => {
         <img src="dashboard.svg" alt="" className="m-2" />
         <span className="fw-bold fs-4">Dashboard</span>
       </div>
-      <div className="d-flex flex-column ms-4">
+      <div className="d-flex flex-column ms-4 ">
         <div className="d-flex mt-3 gap-2">
           <img src="bulb.svg" alt="" className="mt-5 ms-2" />
           <span className="mt-5">Dashboard</span>
@@ -70,7 +70,7 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div className="footer border rounded d-flex ms-2  start-0 md-5 end-2 align-items-center">
+      <div className="footer border border-0 rounded d-flex ms-2  start-0 md-5 end-2 align-items-center">
         <div className="icon p-2">
           <img src="user.png" className="rounded rounded-circle pic" alt="" />
         </div>
