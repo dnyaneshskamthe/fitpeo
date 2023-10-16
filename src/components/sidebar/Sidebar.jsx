@@ -1,7 +1,7 @@
 const Sidebar = () => {
   return (
     <div className="wrapper d-flex flex-column">
-      <div className="mt-3 text-white ms-4 d-flex align-items-center">
+      <div className="mt-2 text-white ms-4 d-flex align-items-center">
         <img src="dashboard.svg" alt="" className="m-2" />
         <span className="fw-bold fs-4">Dashboard</span>
       </div>

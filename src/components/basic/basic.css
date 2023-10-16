@@ -4,6 +4,7 @@
 .wrapper{
     width:250px;
     position:relative;
+    /* height:100%; */
 }
 .sidebar-menu{
     color : rgb(206, 200, 200);
@@ -15,6 +16,13 @@
     bottom : -190px;
     left: 10px;
 }
+
+.right-content {
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    max-height: 100vh; /* Set a maximum height for the right content */
+  }
+
+
 .icon{
     width:20%;
 }
@@ -27,7 +35,7 @@
     font-size:10px
 }
 .right-content{
-    background-color:#f5f6f8
+    background-color:#e4eaf3
 }
 .header-wrapper{
     position:relative;
@@ -69,3 +77,56 @@
     font-size:10px;
     padding:5px;
 }
+
+.card{
+    border: 0;
+}
+#chartdiv {
+    width: 100%;
+    height: 500px;
+  }
+
+.right{
+    width: 31%;
+}
+
+
+/* Styles for Small Screens (e.g., Mobile) */
+@media only screen and (max-width: 575px) {
+    .charts-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .bar-container {
+      width: 60%;
+      margin: 10px 0;
+    }
+  
+    .donut-container {
+      width: 60%;
+      margin-top: 10px;
+      margin-left: 0 !important;
+    }
+  }
+  
+  /* Styles for Medium Screens (e.g., Tablets) */
+  @media only screen and (min-width: 576px) and (max-width: 699px) {
+    .charts-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .bar-container {
+      margin: 10px 0;
+    }
+  
+    .donut-container {
+      width: 60%;
+      margin-top: 10px;
+    }
+  }
+  
+
+/* Styles for Large Screens (e.g., Desktop) */
+@media only screen and(min-width: 992px) {}

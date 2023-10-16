@@ -1,6 +1,5 @@
 import Card from "./components/cards/Card"
 import Bar from "./components/charts/Bar"
-import Donut from "./components/charts/Donut"
 import Header from "./components/header/Header"
 import Products from "./components/products/Products"
 import Sidebar from "./components/sidebar/Sidebar"
@@ -10,15 +9,14 @@ function App() {
  
   return (
     <>
-     <div className="d-flex ">
-      <div className="col-2 sidebar vh-100 text-white">
+     <div className="d-flex">
+      <div className="col-2 sidebar text-white">
         <Sidebar/>
       </div>
       <div className="col-10 vh-100 right-content">
         <Header/>
         <Card/>
         <Bar/>
-        <Donut/>
         <Products/>
      </div>
      </div>
