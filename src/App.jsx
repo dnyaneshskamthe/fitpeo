@@ -1,6 +1,5 @@
 import Card from "./components/cards/Card"
 import Bar from "./components/charts/Bar"
-import Donut from "./components/charts/Donut"
 import Header from "./components/header/Header"
 import Products from "./components/products/Products"
 import Sidebar from "./components/sidebar/Sidebar"
@@ -18,7 +17,6 @@ function App() {
         <Header/>
         <Card/>
         <Bar/>
-        <Donut/>
         <Products/>
      </div>
      </div>

@@ -3,8 +3,8 @@
 const Card = () => {
   return (
     <>
-    <div className="card-wrapper d-flex mx-5 mt-5 justify-content-center align-item-center">
-      <div className="card  d-flex flex-row mx-1" style = {{width: "18rem" , height: "8rem"}}>
+    <div className="card-wrapper d-flex mx-5 mt-3 justify-content-center align-item-center">
+      <div className="card  d-flex flex-row mx-1" style = {{width: "18rem" , height: "7rem"}}>
         <div className="circle m-2 border-0 rounded-circle d-flex justify-content-center align-item-center">
           <img src="dollar.svg" alt="" className="p-4"/>
         </div>
@@ -17,7 +17,7 @@ const Card = () => {
         </div>
       </div>
 
-      <div className="card  d-flex flex-row ms-3" style = {{width: "18rem" , height: "8rem"}}>
+      <div className="card  d-flex flex-row ms-3" style = {{width: "18rem" , height: "7rem"}}>
         <div className="circle1 m-2 border-0 rounded-circle d-flex justify-content-center align-item-center">
           <img src="orders.svg" alt="" className="p-4"/>
         </div>
@@ -30,7 +30,7 @@ const Card = () => {
         </div>
       </div>
 
-      <div className="card  d-flex flex-row ms-3" style = {{width: "18rem" , height: "8rem"}}>
+      <div className="card  d-flex flex-row ms-3" style = {{width: "18rem" , height: "7rem"}}>
         <div className="circle2 m-2 border-0 rounded-circle d-flex justify-content-center align-item-center">
           <img src="balance.svg" alt="" className="p-4"/>
         </div>
@@ -43,7 +43,7 @@ const Card = () => {
         </div>
       </div>
 
-      <div className="card  d-flex flex-row mx-3" style = {{width: "18rem" , height: "8rem"}}>
+      <div className="card  d-flex flex-row mx-3" style = {{width: "18rem" , height: "7rem"}}>
         <div className="circle3 m-2 border-0 rounded-circle d-flex justify-content-center align-item-center">
           <img src="sales.svg" alt="" className="p-4"/>
         </div>
