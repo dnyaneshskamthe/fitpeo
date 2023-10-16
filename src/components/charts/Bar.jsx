@@ -4,9 +4,9 @@ import Donut from "./Donut"
 
 const Bar = () => {
   return (
-    <div className="col-12 mt-3 ms-5 d-flex">
+    <div className="col-12 mt-3 ms-5 d-flex flex-wrap align-item-center ">
      
-      <div className="left col-7 card">
+      <div className="left col-7 card border-0">
         <div className="d-flex flex-column">
           <span className="fs-4 fw-bold ms-3">Overview</span>
           <span className="text-muted mt-0 ms-3" style= {{fontSize:"14px"}}>Monthly Earning</span>
@@ -15,7 +15,7 @@ const Bar = () => {
           <BarChart/>
         </div>        
       </div>
-      <div className="right card ms-3" style={{}}>
+      <div className="right card  ms-4 border-0" style={{}}>
         <div className="d-flex flex-column">
           <span className="fs-4 fw-bold ms-3">Customers</span>
           <span className="text-muted mt-0 ms-3" style= {{fontSize:"14px"}}>Customes that buy products</span>

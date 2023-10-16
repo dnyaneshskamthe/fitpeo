@@ -40,8 +40,14 @@ const Donut = () => {
       text: "",
       textType: "circular",
       inside: true,
-      radius: 10
+      radius: 10,
     });
+
+    series.get("colors").set("colors", [
+      am5.color("#f43497"),
+      am5.color("#6139ea"),
+      am5.color("#f1effc"),
+    ]);
 
     series.data.setAll([
       {
@@ -58,8 +64,12 @@ const Donut = () => {
       }
       
     ]);
-
-   
+    // let labelNew = series.children.push(am5.Label.new(donutRoot));
+    // labelNew.text = "Hi there!";
+    // labelNew.horizontalCenter = "middle";
+    // labelNew.verticalCenter = "middle";
+    // labelNew.fontSize = 40;
+      
     series.appear(1000, 100);
 
     return () => {

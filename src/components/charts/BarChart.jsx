@@ -58,6 +58,18 @@ const BarChart = () => {
         category: 'Sep',
         value1: 100,
       },
+      {
+        category: 'Oct',
+        value1: 110,
+      },
+      {
+        category: 'Nov',
+        value1: 90,
+      },
+      {
+        category: 'Dec',
+        value1: 105,
+      },
     ];
 
     // Create Y-axis
@@ -97,6 +109,25 @@ const BarChart = () => {
         fill: am5.color('#c2b6ad'), // Change the bar color
       })
     );
+
+    series1.columns.template.setAll({
+        fillOpacity: 0.5,
+        strokeWidth: 2,
+        cornerRadiusTL: 5,
+        cornerRadiusTR: 5,
+        cornerRadiusBL: 5,
+        cornerRadiusBR: 5,
+        width: am5.percent(50)
+      });
+
+      series1.columns.template.states.create("riseFromPrevious", {
+        fill: am5.color("#3813bc"),
+      });
+      
+      series1.columns.template.states.create("dropFromPrevious", {
+        fill: am5.color("#9496ad"),
+      });
+
     series1.data.setAll(data);
 
     // Add legend
