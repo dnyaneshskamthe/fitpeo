@@ -9,8 +9,8 @@ function App() {
  
   return (
     <>
-     <div className="d-flex ">
-      <div className="col-2 sidebar vh-100 text-white">
+     <div className="d-flex">
+      <div className="col-2 sidebar text-white">
         <Sidebar/>
       </div>
       <div className="col-10 vh-100 right-content">

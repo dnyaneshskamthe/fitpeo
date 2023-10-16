@@ -2,12 +2,12 @@
 
 const Header= () => {
   return (
-    <div className="mt-3 ms-5 d-flex align-items-center header-wrapper justify-content-around flex-wrap" >
+    <div className="mt-3 ms-5 d-flex align-items-center header-wrapper justify-content-start flex-wrap" >
       <div className="d-flex col-9">
         <p className="greeting fw-bold">Hello, Shahrukh</p>
         <img src="hello.svg" alt="" className="hand mb-3 ms-2" />
       </div>
-      <div className=" d-flex search-wrapper me-5">
+      <div className=" d-flex search-wrapper mx-4">
         <img src="search.svg" alt="" className="search-icon "/>
         <input type="text" placeholder="search" className="form-control search ps-5 border border-0"/>
       </div>
