@@ -1,13 +1,15 @@
-.sidebar{
-    background-color:#040440
+.offcanvas-container {
+  max-width: 200px; /* Adjust the width as needed */
+  background-color: #040440 !important;
 }
-.wrapper{
-    width:250px;
-    position:relative;
-    /* height:100%; */
+
+.offcanvas , .sidebar {
+  width: 14rem !important;
+  height:100vh;
+  
 }
-.sidebar-menu{
-    color : rgb(206, 200, 200);
+.menu:hover{
+  background-color:rgb(83, 107, 243);
 }
 .footer{
     width:210px;
@@ -57,8 +59,20 @@
     width:100%;
 }
 
-.card{
-    /* height:500px; */
+.top-cards{
+    height:100px !important;
+}
+
+.charts-container{
+  height:300px !important;
+}
+.bar-container, .donut-container{
+  height:270px !important;
+}
+
+
+.bar-chart, .donut-chart{
+  height:15rem !important;
 }
 .circle{
     background-color:#dcffeb;
@@ -90,6 +104,9 @@
     width: 31%;
 }
 
+.table{
+  padding : 5px 5px !important;
+}
 
 /* Styles for Small Screens (e.g., Mobile) */
 @media only screen and (max-width: 575px) {
@@ -130,3 +147,21 @@
 
 /* Styles for Large Screens (e.g., Desktop) */
 @media only screen and(min-width: 992px) {}
+
+.wrapper {
+    /* Your original styles for the sidebar */
+    /* Add transition properties for smooth animation */
+    transition: width 0.3s;
+  }
+  
+  .collapsed {
+    /* Style to hide the sidebar when collapsed */
+    width: 0;
+    overflow: hidden;
+  }
+  
+  .toggle-button {
+    /* Style for the button to toggle the sidebar */
+    /* You can add your own styles here */
+  }
+  

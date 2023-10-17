@@ -143,7 +143,7 @@ const BarChart = () => {
   }, []);
 
   return (
-    <div id="barChart" style={{ width: '100%', height: '250px' }}></div>
+    <div id="barChart" style={{ width: '100%', height: '200px' }} className=''></div>
   );
 };
 

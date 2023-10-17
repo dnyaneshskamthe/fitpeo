@@ -3,8 +3,8 @@
 const Card = () => {
   return (
     <>
-    <div className="card-wrapper d-flex mx-5 mt-3 justify-content-between flex-wrap align-item-center ">
-      <div className="card border-0 d-flex flex-row mx-1 mt-1" style = {{width: "15rem" , height: "7rem"}}>
+    <div className="card-wrapper d-flex mx-5 mt-4 justify-content-between flex-wrap align-item-center ">
+      <div className="card top-cards border-0 d-flex flex-row mx-1 mt-1" style = {{width: "15rem" , height: "7rem"}}>
         <div className="circle m-2 border-0 rounded-circle d-flex justify-content-center align-item-center">
           <img src="dollar.svg" alt="" className="p-4"/>
         </div>
@@ -17,7 +17,7 @@ const Card = () => {
         </div>
       </div>
 
-      <div className="card border-0 d-flex flex-row mt-1 " style = {{width: "15rem" , height: "7rem"}}>
+      <div className="card top-cards border-0 d-flex flex-row mt-1 " style = {{width: "15rem" , height: "7rem"}}>
         <div className="circle1 m-2 border-0 rounded-circle d-flex justify-content-center align-item-center">
           <img src="orders.svg" alt="" className="p-4"/>
         </div>
@@ -30,7 +30,7 @@ const Card = () => {
         </div>
       </div>
 
-      <div className="card border-0 d-flex flex-row mt-1" style = {{width: "15rem" , height: "7rem"}}>
+      <div className="card top-cards border-0 d-flex flex-row mt-1" style = {{width: "15rem" , height: "7rem"}}>
         <div className="circle2 m-2 border-0 rounded-circle d-flex justify-content-center align-item-center">
           <img src="balance.svg" alt="" className="p-4"/>
         </div>
@@ -43,7 +43,7 @@ const Card = () => {
         </div>
       </div>
 
-      <div className="card border-0 d-flex flex-row mt-1" style = {{width: "15rem" , height: "7rem"}}>
+      <div className="card top-cards border-0 d-flex flex-row mt-1" style = {{width: "15rem" , height: "7rem"}}>
         <div className="circle3 m-2 border-0 rounded-circle d-flex justify-content-center align-item-center">
           <img src="sales.svg" alt="" className="p-4"/>
         </div>
