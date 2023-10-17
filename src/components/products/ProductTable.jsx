@@ -7,7 +7,7 @@ const ProductTable = () => {
 useEffect(() => {
   const fetchProducts = async () => {
     try {
-      const response = await fetch('/src/components/data/products.json'); //vite-project/src/components/data/products.json
+      const response = await fetch('/products.json'); //vite-project/src/components/data/products.json
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
