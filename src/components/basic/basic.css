@@ -1,19 +1,20 @@
-.sidebar{
-    background-color:#040440
+.offcanvas-container {
+  max-width: 200px; /* Adjust the width as needed */
+  background-color: #040440 !important;
 }
-.wrapper{
-    width:250px;
-    position:relative;
-    /* height:100%; */
+
+.offcanvas , .sidebar {
+  width: 14rem !important;
+  height:100vh;
+  
 }
-.sidebar-menu{
-    color : rgb(206, 200, 200);
+.menu:hover{
+  background-color:rgb(83, 107, 243);
 }
 .footer{
-    width:210px;
     background-color: #2d2d69;
     position: absolute;
-    bottom : -190px;
+    bottom : 10px;
     left: 10px;
 }
 
@@ -21,7 +22,11 @@
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
     max-height: 100vh; /* Set a maximum height for the right content */
   }
-
+.offcanvas-btn{
+  position:absolute;
+  top:10px;
+  left:50px;
+}
 
 .icon{
     width:20%;
@@ -57,8 +62,20 @@
     width:100%;
 }
 
-.card{
-    /* height:500px; */
+.top-cards{
+    height:100px !important;
+}
+
+.charts-container{
+  height:300px !important;
+}
+.bar-container, .donut-container{
+  height:270px !important;
+}
+
+
+.bar-chart, .donut-chart{
+  height:15rem !important;
 }
 .circle{
     background-color:#dcffeb;
@@ -90,13 +107,19 @@
     width: 31%;
 }
 
+.table{
+  padding : 5px 5px !important;
+}
 
 /* Styles for Small Screens (e.g., Mobile) */
 @media only screen and (max-width: 575px) {
-    .charts-container {
-      display: flex;
-      flex-direction: column;
-    }
+  .top-cards{
+    /* margin-top:30px !important; */
+    width:400px !important; 
+  }
+  .charts-container {
+    flex-direction: column;
+  }
   
     .bar-container {
       width: 60%;
@@ -108,25 +131,88 @@
       margin-top: 10px;
       margin-left: 0 !important;
     }
+    .menu-name , .pmanager, .position, .footer-arrow,.menu-right-arrow{
+      display:none;
+    }
+    .footer{
+      width:40px;
+      height:40px;
+    }
+    .footer-pic{
+      margin-left:5px;
+      width:1.5rem;
+    }
+    .menu , .top-title{
+      width:1rem;
+    }
+    .offcanvas , .sidebar, .offcanvas-container {
+      width: 4rem !important;      
+    }
   }
   
   /* Styles for Medium Screens (e.g., Tablets) */
   @media only screen and (min-width: 576px) and (max-width: 699px) {
-    .charts-container {
-      display: flex;
-      flex-direction: column;
-    }
-  
+   
+
     .bar-container {
       margin: 10px 0;
     }
   
     .donut-container {
-      width: 60%;
       margin-top: 10px;
+    }
+    .menu-name, .pmanager, .position, .footer-arrow,.menu-right-arrow{
+      display:none;
+    }
+
+    .menu , .top-title{
+      width:1rem;
+    }
+    .offcanvas , .sidebar, .offcanvas-container {
+      width: 4rem !important;      
+    }
+
+    .footer{
+      width:40px;
+      height:40px;
+    }
+    .footer-pic{
+      margin-left:5px;
+      width:1.5rem;
     }
   }
   
 
 /* Styles for Large Screens (e.g., Desktop) */
-@media only screen and(min-width: 992px) {}
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  .menu-name, .pmanager, .position, .footer-arrow,.menu-right-arrow{
+    display:none;
+  }
+  .menu , .top-title{
+    width:1rem;
+  }
+  .offcanvas , .sidebar, .offcanvas-container {
+    width: 4rem !important;      
+  }
+
+  .footer{
+    width:40px;
+    height:40px;
+  }
+  .footer-pic{
+    margin-left:5px;
+    width:1.5rem;
+  }
+}
+
+.wrapper {
+    /* Your original styles for the sidebar */
+    /* Add transition properties for smooth animation */
+    transition: width 0.3s;
+  }
+
+ 
+  
+  
+
+  

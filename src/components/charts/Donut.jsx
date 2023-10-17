@@ -78,7 +78,7 @@ const Donut = () => {
   }, []);
 
   return (
-    <div id="donutChart" style={{ width: '100%', height: '250px' }}></div>
+    <div id="donutChart" style={{ width: '100%', height: '200px' }} className=''></div>
   );
 };
 

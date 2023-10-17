@@ -13,7 +13,6 @@ useEffect(() => {
       }
       const data = await response.json();
       setProducts(data);
-      console.log(data);
     } catch (error) {
       console.error('Failed to fetch products:', error);
       // Handle the error (e.g., display an error message)
@@ -36,7 +35,7 @@ useEffect(() => {
          
         </thead>
         {products.map((product, index) => (
-          <tr key={index}>
+          <tr key={index} className="p-1">
            <td className="d-flex align-items-center">
               <div className="product-image w-25">
                 <img className="w-75 rounded" src={product.productImage} alt={product.productTitle} />
