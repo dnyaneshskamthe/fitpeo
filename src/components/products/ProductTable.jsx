@@ -13,7 +13,6 @@ useEffect(() => {
       }
       const data = await response.json();
       setProducts(data);
-      console.log(data);
     } catch (error) {
       console.error('Failed to fetch products:', error);
       // Handle the error (e.g., display an error message)
