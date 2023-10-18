@@ -148,6 +148,12 @@
     .offcanvas , .sidebar, .offcanvas-container {
       width: 4rem !important;      
     }
+    .product-header{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      margin:2px;
+    }
   }
   
   /* Styles for Medium Screens (e.g., Tablets) */
